@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<h1><?= $assets_variable ?></h1>
+	<ul>
+		<li>String argument: <?= $this->assets('str_arg', 'hero') ?></li>
+		<li>One argument: <?= $this->assets('one_arg', 'junk') ?></li>
+		<li>Two arguments #1: <?= $this->assets('two_arg') ?></li>
+		<li>Two arguments #2: <?= $this->assets('two_arg', 'creep') ?></li>
+		<li>Predefined argument: <?= $this->assets('pre_def', 'warrior') ?></li>
+		<li>Error: <?php
+			try {
+				$this->assets('nonexistent');
+			} catch(\Exception $e) {
+				echo "Catched exception";
+			}
+		?></li>
+	</ul>
+</body>
+</html>

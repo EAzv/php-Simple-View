@@ -1,0 +1,22 @@
+<?php
+	$layer_2 = 'Checked!';
+?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<h1><?= $title ?></h1>
+	<ul>
+		<li>Layer #2: <?= $layer_2 ?></li>
+		<li>Layer #1: <?= $layer_1 ?></li>
+		<li>Layer #0: <?= $layer_0 ?></li>
+	</ul>
+	<p>
+		begin wrapper #2
+<?= $this->content() ?>
+		end wrapper #2
+	</p>
+</body>
+</html>

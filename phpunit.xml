@@ -1,0 +1,7 @@
+<phpunit bootstrap="vendor/autoload.php"  colors="true" >
+  <testsuites>
+    <testsuite name="SimpleView" >
+		<file>./tests/SimpleViewTest.php</file>
+    </testsuite>
+  </testsuites>
+</phpunit>
