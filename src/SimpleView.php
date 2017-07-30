@@ -162,7 +162,7 @@ class SimpleView
 	public function url (string $path=null): string
 	{
 		//return $this->_base_url . $path;
-		return $this->_path_normalize($this->_base_url.'/'.$path, '/');
+		return $this->_path_normalize($this->config('base_url').'/'.$path, '/');
 	}
 
 	/**
